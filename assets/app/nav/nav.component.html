@@ -1,0 +1,24 @@
+<!--<div class="nav">
+    <nav class="col-md-8 col-md-offset-2">
+        <ul class="nav nav-pills">
+            <li routerLinkActive="active"><a [routerLink]="['/dreams']">Dreams</a></li>
+            <li routerLinkActive="active"><a [routerLink]="['/auth']">Authentication</a></li>
+        </ul>
+    </nav>
+</div>-->
+<div class="side-nav" *ngIf="isLoggedIn()">
+    <div class="user-con">
+        <div class="user-pic"></div>
+        <h4 class="users-name">{{displayName}}</h4>
+        <a href="#"><h6 class="users-profile">Profile</h6></a>
+    </div>
+    <div class="category-con">
+        <ul class="nav nav-pills">
+            <li routerLinkActive="active" class="nav-item"><a [routerLink]="['/category1_items']">Category1 Items</a></li>
+            <li routerLinkActive="active" class="nav-item"><a [routerLink]="['/category2_items']">Category2 Items</a></li>
+            <li routerLinkActive="active" class="nav-item"><a [routerLink]="['/category3_items']">Category3 Items</a></li>
+            <li routerLinkActive="active" class="nav-item"><a [routerLink]="['/category4_items']">Category4 Items</a></li>
+            <li routerLinkActive="active" class="nav-item"><a [routerLink]="['/category5_items']">Category5 Items</a></li>
+        </ul>
+    </div>
+</div>

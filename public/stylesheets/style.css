@@ -1,0 +1,265 @@
+body {
+  /*
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  */
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: 1px;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #fff;
+    background-color: #6666ff;
+    border-radius: 0px;
+}
+.nav-pills>li>a:hover {
+  background-color: #6666ff;
+  border-radius: 0px;
+  margin-left: 0px!important;
+}
+.nav-pills>li+li {
+  margin-left: 0px;
+}
+.nav-pills>li+li:hover {
+  margin-left: 0px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+.nav-pills>li>a {
+  color: white;
+}
+a:hover,
+a:active {
+  color: white;
+  text-decoration: none;
+  background-color: black;
+}
+a.danger {
+  color: red;
+}
+.spacing {
+  margin-bottom: 20px;
+}
+input.ng-invalid.ng-touched {
+  border: 1px solid red;
+}
+/* HEADER */
+.header {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  background:#00cc99;
+  -webkit-animation:colour 10s linear infinite;
+	-moz-animation:colour 10s linear infinite;
+  z-index: 1;
+}
+@-webkit-keyframes colour{
+	0%{
+		background:#00cc99
+	}
+	40%{
+		background:#0099ff
+	}
+	80%{
+		background:#6666ff
+	}
+	100%{
+		background:#00cc99
+	}
+}
+@-moz-keyframes colour{
+	0%{
+		background:#00cc99
+	}
+	40%{
+		background:#0099ff
+	}
+	80%{
+		background:#6666ff
+	}
+	100%{
+		background:#00cc99
+	}
+}
+.header-left, .header-right {
+  height: 100%;
+  width: 50%;
+  float: left;
+}
+.header-right {
+  text-align: right;
+}
+.logo, .brand {
+  display: inline-block;
+  color: white;
+}
+.logo {
+  height: 50px;
+  width: 50px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+.header-brand:hover {
+  background-color: transparent;
+}
+
+.signin, .signup, .logout {
+  display: inline-block;
+  padding-top: 12px;
+}
+.logout {
+  color: white;
+}
+.signin>a, .signup>a, .logout>a {
+  color: white;
+}
+.signin>a:hover, .signup>a:hover, .logout>a:hover {
+  background-color: transparent;
+}
+.signin:hover, .signup:hover, .logout:hover {
+  cursor: pointer;
+}
+.signup {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+.logout {
+  margin-right: 15px;
+}
+/* SIGNIN/SIGNUP */
+.signin-signup-con {
+  padding-top: 100px;
+  margin: auto;
+  width: 300px;
+}
+.form-labels {
+  text-align: center;
+}
+#submit {
+  width: 100%;
+  background:#00cc99;
+  -webkit-animation:colour 10s linear infinite;
+	-moz-animation:colour 10s linear infinite;
+}
+#submit-dream {
+  float: right;
+}
+/* MODALS */
+.modal-title {
+  text-align: center;
+  color: #00cc99
+}
+/* NAV */
+.side-nav {
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  float: left;
+  background-color: #6666ff;
+  margin-top: 60px;
+}
+/* DREAMS */
+.dream-con {
+  padding-top: 100px;
+  width: 800px;
+  margin: auto;
+}
+.not-logged-in {
+  width: 100%;
+  height: 100px;
+  margin-top: 60px;
+  background:#00cc99;
+  -webkit-animation:colour 10s linear infinite;
+	-moz-animation:colour 10s linear infinite;
+  text-align: center;
+}
+.join-today {
+  color: white;
+  margin: 0px;
+}
+.dream-list {
+  width: 600px;
+  border: 1px solid #f2f2f2;
+  margin: auto;
+  height: 200px;
+}
+.poster, .poster-content {
+  display: inline-block;
+  height: 100%;
+  float: left;
+}
+.poster {
+  width: 20%;
+  text-align: center;
+}
+
+.poster-pic {
+  height: 50px;
+  width: 50px;
+  border: 1px solid #6666ff;
+  border-radius: 10px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.poster-content {
+  width: 80%;
+}
+
+
+
+
+
+
+.user-con {
+  height: 135px;
+  width: 100%;
+  border-bottom: 1px solid white;
+  text-align: center;
+}
+.user-pic {
+  height: 50px;
+  width: 50px;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 28px;
+}
+.users-name, .users-profile {
+  color: white;
+}
+.users-profile:hover {
+  cursor: pointer;
+}
+.category-con {
+  height: 100%;
+  width: 100%;
+  background-color: #00cc99
+}
+.category-item {
+  height: 35px;
+  width: 100%;
+  border-bottom: 1px solid white;
+  text-align: left;
+}
+.category-item:hover {
+  cursor: pointer;
+}
+.category-item-txt {
+  color: white;
+  margin: 0px;
+  padding-top: 5px;
+  margin-left: 15px;
+}
+
+
+
+.nav-item {
+  width: 100%;
+  border-radius: 0px;
+}
+
+
+

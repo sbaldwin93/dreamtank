@@ -1,0 +1,21 @@
+<div class="not-logged-in" *ngIf="!isLoggedIn()">
+    <h2 class="join-today">Sign up Today<br> and start dreaming!!!</h2>
+</div>
+<div class="dream-con" *ngIf="isLoggedIn()">
+<div class="col-md-8 col-md-offset-2">
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <div class="form-group">
+            <!--<label for="content">Content</label>-->
+            <textarea
+                    type="text"
+                    id="content"
+                    class="form-control"
+                    [ngModel]="category3_item?.content"
+                    name="content"
+                    required></textarea>
+        </div>
+        <button type="button" class="btn btn-danger" (click)="onClear(f)">Clear</button>
+        <button class="btn btn-primary" type="submit" id="submit-dream">Submit</button>
+    </form>
+</div>
+</div>

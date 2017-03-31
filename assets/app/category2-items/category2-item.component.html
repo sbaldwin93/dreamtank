@@ -1,0 +1,23 @@
+<!--<article class="panel panel-default">
+    <div class="panel-body">
+        {{ dream.content }}
+    </div>
+    <footer class="panel-footer">
+        <div class="author">
+            {{ dream.username }}
+        </div>
+        <div class="config" *ngIf="belongsToUser()">
+            <a (click)="onEdit()">Edit</a>
+            <a (click)="onDelete()">Delete</a>
+        </div>
+    </footer>
+</article>-->
+<div class="dream-list">
+    <div class="poster">
+        <div class="poster-pic"></div>
+        <h6 class="poster-name">{{category2_item.username}}</h6>
+    </div>
+    <div class="poster-content">
+        <h6 class="poster-content-txt">{{category2_item.content}}</h6>
+    </div>
+</div>

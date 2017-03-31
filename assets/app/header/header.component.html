@@ -1,0 +1,31 @@
+<div class="header">
+    <div class="header-left">
+        <a class="header-brand" href="#">
+          <img class="logo" src="/images/logo.svg">
+          <h3 class="brand">Dream Think Tank</h3>
+        </a>
+    </div>
+    <div class="header-right">
+        <h5 class="signin" *ngIf="!isLoggedIn()" routerLinkActive="active" data-toggle="modal" data-target="#loginModal"><a [routerLink]="['/auth/signin']">Login</a></h5>
+        <h5 class="signup" routerLinkActive="active" *ngIf="!isLoggedIn()"><a [routerLink]="['/auth/signup']">Signup</a></h5>
+        <h5 class="logout" *ngIf="isLoggedIn()" (click)="onLogout()">Logout</h5>
+    </div>
+</div>
+
+<!-- SIGNUP MODAL -->
+<div class="modal fade" tabindex="-1" role="dialog" id="signupModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <p>One fine body&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
